@@ -1,0 +1,178 @@
+body, h1, h2 {
+  margin: 0;
+}
+
+.cards {
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 25px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px #dfdddd solid;
+  justify-content: space-between;
+  margin: 10px 10% 20px;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-img {
+  height: 275px;
+  width: 200px;
+}
+
+.card-title {
+  font-family: Inter, serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.content-container {
+  width: 60%;
+  background-color: white;
+}
+
+.country {
+  font-family: Inter, serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  color: #2B283A;
+  letter-spacing: 3px;
+  margin-right: 8px;
+}
+
+.dates {
+  font-family: Inter, serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.description {
+  font-family: Inter, serif;
+  font-weight: 400;
+  color: #2B283A;
+  font-size: 12px;
+}
+
+.globe {
+  height: 30px;
+}
+
+.location-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.maps-link {
+  color: #918E9B;
+  font-family: Inter, serif;
+  text-decoration: underline;
+  font-size: 13px;
+}
+
+.marker-img {
+  height: 15px;
+  width: 15px;
+}
+
+.navbar {
+  background-color: #F55A5A;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  align-items: center; 
+  height: 100%;
+}
+
+.title {
+  font-family: Inter, serif;
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+  text-shadow: #201f1f 0px 2px 4px
+}
+
+@media screen and (max-width: 1250px) {
+  .content-container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .content-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .country {
+    margin-right: 8px;
+  }
+
+  .globe {
+    height: 26px;
+  }
+
+  .maps-link {
+    margin-bottom: 0px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {  
+  .country, .maps-link {
+    font-size: 12px;
+  }
+
+  .content-container {
+    width: 100%;
+  }
+
+  .globe {
+    height: 22px;
+  }
+
+  .marker-img {
+    height: 13px;
+    width: 13px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .title {
+    font-size: 22px;
+  }
+}
